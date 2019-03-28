@@ -84,8 +84,6 @@ a {
 	transform: scale(1.5);
 	color: silver;
 	transition: 0.4s;
-
-
 }
 .logo{
 	position: absolute;
@@ -130,6 +128,9 @@ a {
 .navbar-menu-list_item{
 	text-transform: uppercase;
 	margin-bottom: 20px;
+}
+.navbar-menu-list_item:hover{
+	color:silver;
 }
 .navbar-btn{
 	background-color: transparent;
