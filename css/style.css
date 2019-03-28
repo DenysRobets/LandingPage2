@@ -58,6 +58,7 @@ a {
 	background: linear-gradient(to right, rgba(0, 242, 152, 0.78) 0%, rgba(7, 247, 247, 0.78) 100%),
 	url(../img/header-bg.png);
 	min-height: 100vh;
+	
 }
 
 /*--------------- Navbar ---------------*/
@@ -66,6 +67,7 @@ a {
 	min-height: 80px;
 	position: fixed;
 	z-index: 999;
+
 }
 .navbar-wrap{
 	display: flex;
@@ -79,6 +81,10 @@ a {
 	line-height: 80px;
 }
 .logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: flex;
 	justify-content: center;
 	font-weight: 800;
@@ -102,14 +108,17 @@ a {
 .navbar-social__item{
 	margin: 20px;
 }
-.navbar-menu-list{
+.navbar-menu{
 	position: absolute;
 	text-align: right;
 	top: 100%;
-	right: 0;
+	right: -100%;
 	font-size: 14px;
-	font-weight: 900;
-	display: none;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.chk-box:checked ~ .navbar-menu{
+	right: 0;
 }
 .navbar-menu-list_item{
 	text-transform: uppercase;
@@ -127,16 +136,45 @@ a {
 	justify-content: space-between;
 	align-items: flex-end; 
 	cursor: pointer;
+	position: relative;
 }
-.navbar-btn span{
+.navbar-btn .navbar-btn__line{
 	width: 40px;
 	height: 3px;
 	background-color: #fff;
+	transition: 0.5s;
 }
-.navbar-btn span:nth-of-type(2){
+.navbar-btn .navbar-btn__line:nth-of-type(2){
 	width: 30px;
+}
+.navbar-btn:hover .navbar-btn__line{
+	width: 40px;
+	background-color: silver;
 }
 .navbar-btn:focus{
 	outline: none;
 }
+.chk-box{
+	display: none;
+}
+#chk:checked ~ .navbar-btn .navbar-btn__line:nth-of-type(1){
+	position: absolute;
+	top: 50%;
+	/* transform: translate(-50%, -50%); */
+	transform: rotate(45deg);
+}
+#chk:checked ~ .navbar-btn .navbar-btn__line:nth-of-type(2){
+	display: none;
+}
+#chk:checked ~ .navbar-btn .navbar-btn__line:nth-of-type(3){
+	position: absolute;
+	top: 50%;
+	/* transform: translate(-50%, -50%); */
+	transform: rotate(-45deg);
+}
+
+/*--------------- Hero ---------------*/
+
+
+
 
