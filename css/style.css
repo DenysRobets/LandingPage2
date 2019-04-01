@@ -50,7 +50,6 @@ a {
 	text-decoration: none;
 }
 .container {
-	width: 80%;
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -75,7 +74,7 @@ a {
 	position: relative;
 }
 .navbar-social{
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 80px;
 }
 .navbar-social__item:hover i{
@@ -109,7 +108,8 @@ a {
 }
 
 .navbar-social__item{
-	margin: 20px;
+	margin: 20px 40px 20px 0;
+
 }
 .navbar-menu{
 	position: absolute;
@@ -180,8 +180,8 @@ a {
 /*--------------- Hero ---------------*/
 .welcome{
 	color: #fff;
-	padding-top: 300px;
-	padding-bottom: 250px;
+	padding: 300px 0;
+	
 }
 .welcome-title{
 	font-size: 40px;
