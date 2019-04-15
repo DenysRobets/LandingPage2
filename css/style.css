@@ -207,9 +207,30 @@ a {
 }
 
 /*--------------- about me ---------------*/
+.about_me{
+	background-color: #22252c; 
+}
+.about_me-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.photo-wrap{
+	padding: 10px 25px 0;
+	background-color: #141820;
 
-
-
+}
+img{
+	width: 334px;
+	height: 375px;
+	
+}
+.about_me-content{
+	width: 50%;
+}
 
 /*--------------- media queries ---------------*/
 @media screen and (max-width: 1200px) {
