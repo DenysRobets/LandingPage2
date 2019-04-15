@@ -57,6 +57,8 @@ a {
 .header{
 	background: linear-gradient(to right, rgba(0, 242, 152, 0.78) 0%, rgba(7, 247, 247, 0.78) 100%),
 	url(../img/header-bg.png);
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 /*--------------- Navbar ---------------*/
