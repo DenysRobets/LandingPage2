@@ -50,6 +50,7 @@ a {
 	text-decoration: none;
 }
 .container {
+	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -180,12 +181,11 @@ a {
 /*--------------- Hero ---------------*/
 .hero {
 	height: 100vh;
+	display: flex;
+	align-items: center;
 }
 .welcome{
 	color: #fff;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 }
 .welcome-title{
 	font-size: 40px;
