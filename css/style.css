@@ -178,10 +178,14 @@ a {
 }
 
 /*--------------- Hero ---------------*/
+.hero {
+	height: 100vh;
+}
 .welcome{
 	color: #fff;
-	padding: 300px 0;
-	
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .welcome-title{
 	font-size: 40px;
